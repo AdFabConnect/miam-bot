@@ -1,0 +1,12 @@
+{
+  "development": {
+    "DEBUG": true,
+    "CHANNEL": "#test-bot",
+    "CHANNEL_TYPE": "channels"
+  },
+  "production": {
+    "DEBUG": false,
+    "CHANNEL": "#paris",
+    "CHANNEL_TYPE": "channels"
+  }
+}

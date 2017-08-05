@@ -1,0 +1,37 @@
+{
+  "name": "miam-bot",
+  "version": "1.0.0",
+  "description": "A slack bot to notice people when it's time to order lunch!",
+  "keywords": [
+    "bot",
+    "slack",
+    "foodcheri"
+  ],
+  "license": "MIT",
+  "author": "Arnaud Ligny <arnaud@ligny.org>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.js --exec 'npm run eslint && node'",
+    "start": "NODE_ENV=production node ./src/index.js",
+    "eslint": "./node_modules/eslint/bin/eslint.js ./src/"
+  },
+  "dependencies": {
+    "botkit": "^0.5.4",
+    "node-schedule": "^1.2.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.11.0"
+  },
+  "engines": {
+    "node": "^8.2.1"
+  }
+}
