@@ -2,11 +2,11 @@
   "development": {
     "DEBUG": true,
     "CHANNEL": "#test-bot",
-    "CHANNEL_TYPE": "channels"
+    "SCHEDULE": "0 27 13 * * 1-5"
   },
   "production": {
     "DEBUG": false,
-    "CHANNEL": "#paris",
-    "CHANNEL_TYPE": "channels"
+    "CHANNEL": "#a-table",
+    "SCHEDULE": "0 45 10 * * 1-5"
   }
 }
