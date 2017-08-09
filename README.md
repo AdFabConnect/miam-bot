@@ -23,7 +23,7 @@ export SLACK_BOT_TOKEN="xoxb-XXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXX"
 
 The bot daily message is sent to:
 - #test-bot channel on debug mode
-- #paris channel on production mode
+- #a-table channel on production mode
 
 ## Usage
 
