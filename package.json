@@ -2,19 +2,19 @@
   "name": "miam-bot",
   "version": "1.0.0",
   "description": "A slack bot to notice people when it's time to order lunch!",
-  "keywords": [
-    "bot",
-    "slack",
-    "foodcheri"
-  ],
+  "keywords": ["bot", "slack", "foodcheri"],
   "license": "MIT",
-  "author": "Arnaud Ligny <arnaud@ligny.org>",
+  "author": {
+    "name": "Arnaud Ligny",
+    "email": "arnaud@ligny.org",
+    "url": "http://narno.org"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./src/index.js --exec 'npm run eslint && node'",
+    "dev": "nodemon ./src/index.js --exec 'npm run lint && node'",
     "start": "NODE_ENV=production node ./src/index.js",
-    "eslint": "./node_modules/eslint/bin/eslint.js ./src/"
+    "lint": "./node_modules/eslint/bin/eslint.js ./src/"
   },
   "dependencies": {
     "botkit": "^0.5.4",
