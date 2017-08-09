@@ -1,6 +1,6 @@
 # miam-bot
 
-> A very simple bot based on [Botkit](https://github.com/howdyai/botkit) to inform you when it's time to order food on http://foodcheri.com!
+> A very simple bot based on [Botkit](https://github.com/howdyai/botkit) to inform you when it's time to order food on http://foodcheri.com!  
 > _miam-bot_ is Heavily inspired by [uzfood-bot](https://github.com/UzfulLab).
 
 ## Installation
@@ -32,7 +32,7 @@ The bot daily message is sent to:
 npm run dev
 
 # Run ESLint to check if code respects it's syntax.
-npm run eslint
+npm run lint
 
 # Start server in production environment.
 npm run start
@@ -41,6 +41,17 @@ npm run start
 ### Supported commands
 
 Just ask `help` to `@miam-bot`.
+
+## Deploy
+
+### Heroku
+
+```bash
+heroku create --buildpack https://github.com/heroku/heroku-buildpack-nodejs.git
+heroku config:set SLACK_BOT_TOKEN=xoxb-XXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXX
+heroku config:set TZ=Europe/Paris
+heroku ps:scale web=0 worker=1
+```
 
 ## Development
 
