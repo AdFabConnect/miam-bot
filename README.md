@@ -61,4 +61,4 @@ This project uses ESLint for its syntax. You should read [some documentation bef
 
 _miam-bot_ is a free software distributed under the terms of the [MIT license](http://opensource.org/licenses/MIT).
 
-Copyright (c) 2017, Arnaud Ligny
+Copyright (c) 2017, AdFab
