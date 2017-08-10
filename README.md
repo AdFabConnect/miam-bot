@@ -22,8 +22,8 @@ export SLACK_BOT_TOKEN="xoxb-XXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXX"
 ### Slack channels
 
 The bot daily message is sent to:
-- #test-bot channel on debug mode
-- #a-table channel on production mode
+- `#test-bot` channel on debug mode
+- `#a-table` channel on production mode
 
 ## Usage
 
