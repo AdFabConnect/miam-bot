@@ -1,6 +1,6 @@
 # miam-bot
 
-> A very simple bot based on [Botkit](https://github.com/howdyai/botkit) to inform you when it's time to order food on http://foodcheri.com!  
+> A very simple bot based on [Botkit](https://github.com/howdyai/botkit) to notify a Slack channel when it's time to order food on http://foodcheri.com!  
 > _miam-bot_ is Heavily inspired by [uzfood-bot](https://github.com/UzfulLab).
 
 ## Installation
@@ -17,7 +17,7 @@ You need to set an environment variable:
 export SLACK_BOT_TOKEN="xoxb-XXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXX"
 ```
 
-> You'll find `SLACK_BOT_TOKEN` ay https://my.slack.com/apps/A0F7YS25R-bots.
+> You'll find `SLACK_BOT_TOKEN` at https://my.slack.com/apps/A0F7YS25R-bots.
 
 ### Slack channels
 
