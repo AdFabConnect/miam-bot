@@ -9,7 +9,7 @@
 npm install
 ```
 
-### Slack tokens
+### Slack token
 
 You need to set an environment variable:
 
@@ -17,13 +17,36 @@ You need to set an environment variable:
 export SLACK_BOT_TOKEN="xoxb-XXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXX"
 ```
 
-> You'll find `SLACK_BOT_TOKEN` at https://my.slack.com/apps/A0F7YS25R-bots.
+> You'll find your Slack token at https://my.slack.com/apps/A0F7YS25R-bots.
 
-### Slack channels
+## Configuration
 
-The bot daily message is sent to:
-- `#test-bot` channel on debug mode
-- `#a-table` channel on production mode
+See `config.json` file.
+
+### Slack channel
+
+Set `CHANNEL` key.
+
+By default, the bot daily message is sent to:
+- `#test-bot` channel on _development_ environment
+- `#a-table` channel on _production_ environment
+
+### Reminder schedule
+
+Set `SCHEDULE` key.
+
+The cron-style scheduling format consists of:
+```
+*    *    *    *    *    *
+┬    ┬    ┬    ┬    ┬    ┬
+│    │    │    │    │    |
+│    │    │    │    │    └ day of week (0 - 7) (0 or 7 is Sun)
+│    │    │    │    └───── month (1 - 12)
+│    │    │    └────────── day of month (1 - 31)
+│    │    └─────────────── hour (0 - 23)
+│    └──────────────────── minute (0 - 59)
+└───────────────────────── second (0 - 59, OPTIONAL)
+```
 
 ## Usage
 
