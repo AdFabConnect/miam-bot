@@ -1,7 +1,9 @@
 # miam-bot
 
-> A very simple bot based on [Botkit](https://github.com/howdyai/botkit) to notify a Slack channel when it's time to order food on http://foodcheri.com!  
+> A very simple bot based on [Botkit](https://github.com/howdyai/botkit) to notify a Slack channel when it's time to order food on http://foodcheri.com!
 > _miam-bot_ is Heavily inspired by [uzfood-bot](https://github.com/UzfulLab).
+
+![Slack screen capture](./docs/miam-bot-slack-example.png)
 
 ## Installation
 
